@@ -1,0 +1,17 @@
+subprojects {
+  apply plugin: 'groovy'
+  apply plugin: 'eclipse'
+
+  repositories {
+    mavenCentral()
+  }
+
+  dependencies {
+    runtime 'org.codehaus.groovy:groovy-all:2.2.0'
+    runtime 'com.netflix.rxjava:rxjava-core:0.16.1'
+    runtime 'com.netflix.rxjava:rxjava-groovy:0.16.1'
+  }
+
+  version = '1.0'
+}
+
